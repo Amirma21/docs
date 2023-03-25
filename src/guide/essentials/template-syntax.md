@@ -248,7 +248,7 @@ If you need to pass a complex dynamic argument, it's probably better to use a [c
 When using in-DOM templates (templates directly written in an HTML file), you should also avoid naming keys with uppercase characters, as browsers will coerce attribute names into lowercase:
 
 ```vue-html
-<a :[someAttr]="value"> ... </a>
+<a :[someAttr]='value'> ... </a>
 ```
 
 The above will be converted to `:[someattr]` in in-DOM templates. If your component has a `someAttr` property instead of `someattr`, your code won't work. Templates inside Single-File Components are **not** subject to this constraint.
